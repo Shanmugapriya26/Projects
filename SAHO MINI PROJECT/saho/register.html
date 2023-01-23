@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="./responsiveRegistration.css">
+<script type="text/javascript" lang="javascript" src="./responsiveRegistaration.js"></script>
+</head>
+<title>Register Form Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    background: url(back.jpg)no-repeat center center fixed;
+    font-family: sans-serif;
+}
+
+.box{
+
+ 
+    background: #f5f5f5;
+    color: red;
+    top: 50%;
+    left: 30%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+
+
+.user{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+}
+
+p{
+    color: #f49126;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+ input[type="text"], input[type="password"] ,input[type="email"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #673ab7;
+    font-size: 16px;
+}
+
+input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #2196f3;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+
+input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #0097a7;
+}
+
+a
+{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #069818;
+}
+
+
+a:hover
+{
+    color: red;
+}
+</style>
+<body>
+
+    <div class="box">
+    <img src="user.png" class="user">
+
+        <form name="myform" action="SahoDB.php" method="POST">
+
+            <p>Firstname</p>
+            <input type="text" name="firstname" placeholder="Enter Firstname" required="">
+            <p>Firstname</p>
+            <input type="text" name="lastname" placeholder="Enter Lastname" required="">
+            <p>Email</p>
+            <input type="Email" name="email" placeholder="Enter email id" required="">
+            <p>Genere</p>
+            <input type="text" name="Genere" placeholder="Enter Genere" required="">
+            <p>Gender</p>
+            <input type="text" name="gender" placeholder="Enter Gender" required="">
+            <div class="row">
+                <div class="col-10">
+                    <label for="Date">Date:</label>
+                </div>
+                <div class="col-90">
+                    <input type="Date" id="Date" name="dDate">
+                </div>
+            </div>
+            <p>City</p>
+            <input type="text" name="city" placeholder="Enter city" required="">
+            <p>Job</p>
+            <input type="text" name="ppin" placeholder="Enter your Job" required="">
+            <p>Organization</p>
+            <input type="text" name="sstate" placeholder="Enter your Organization name" required="">
+            <p>Password</p>
+            <input type="password" name="ppassword" placeholder="Enter Password" required="">
+
+
+            <input type="submit" name="" value="Register">
+
+            <br><br>
+        </form>
+        
+    </div>
+
+</body>
+</head>
+</html>
