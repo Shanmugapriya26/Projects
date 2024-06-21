@@ -10,7 +10,7 @@ public class Database {
 	public Database() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/social","root","rahulraj09092002");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/social","root","root");
 			stmt=con.createStatement();
 		} catch(Exception e) {
 			System.out.print(e.toString());
